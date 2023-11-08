@@ -21,6 +21,52 @@ header {
   justify-content: space-around;
   list-style-type: none;
   padding-bottom: 5px;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+.nav-bar a {
+  font-size: 20px;
+  color: #7b3804;
+}
+.nav-bar .active {
+  color: #e25825;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  width: 100%;
+  align-items: center;
+  background-color: #88aaff;
+  padding-top: 5px;
+}
+.heading {
+  color: #e25825;
+  font-size: 30px;
+}
+.heading h1 {
+  text-align: center;
+}
+.nav-bar {
+  background-color: #6495ed;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-bottom: 5px;
   margin-bottom: 0px;
 }
 .nav-bar a {
