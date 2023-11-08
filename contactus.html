@@ -1,19 +1,87 @@
 <html>
   <head>
-    <title>Home</title>
-  </head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function validate() {
+        var username = document.signup.uname.value;
+        var firstanme = document.signup.fname.value;
+        var lastname = document.signup.lnamea.value;
+        var password = document.signup.passw.value;
+        var cpassword = document.signup.cpassw.value;
 
+        if (
+          username == "" ||
+          firstname == "" ||
+          lastname == "" ||
+          password == "" ||
+          cpassword == ""
+        ) {
+          alert("Fill in all the fields");
+        } else {
+          if (password.length < 8 || password.length > 15) {
+            alert("Password should be between 8-15 characters long");
+          } else {
+            if (password != cpassword) {
+              alert("Password and Confirm password should match");
+            } else {
+              alert("Form submitted success");
+            }
+          }
+        }
+      }
+    </script>
+  </head>
   <body>
     <header>
-      <div>
-        <h1>Furry Beings</h1>
+      <div class="heading">
+        <h1>FURRY BEINGS</h1>
       </div>
-      <ul>
+      <ul class="nav-bar">
         <li><a href="index.html">Home</a></li>
-        <li><a href="goodgames.html">Good Games</a></li>
-        <li><a href="badgames.html">Worst Games</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="goodgames.html">Dogs</a></li>
+        <li><a href="badgames.html">Cats</a></li>
+        <li><a href="contactUs.html">Contact Us</a></li>
       </ul>
     </header>
+    <div class="content">
+      <form name="signup">
+        <fieldset>
+          <legend>Sign Up</legend>
+          <table>
+            <tr>
+              <td align="right"><label>Username:</label></td>
+              <td><input type="text" name="uname" /><br /></td>
+            </tr>
+            <tr>
+              <td align="right"><label>First Name:</label></td>
+              <td><input type="text" name="fname" /><br /></td>
+            </tr>
+            <tr>
+              <td align="right"><label>Last Name:</label></td>
+              <td><input type="text" name="lname" /><br /></td>
+            </tr>
+            <tr>
+              <td align="right"><label>Password:</label></td>
+              <td><input type="password" name="passw" /><br /></td>
+            </tr>
+            <tr>
+              <td align="right"><label>Confirm Password:</label></td>
+              <td><input type="password" name="cpassw" /><br /></td>
+            </tr>
+            <tr>
+              <td colspan="2" align="center">
+                <input
+                  type="submit"
+                  onclick="validate();"
+                  value="Sign up"
+                /><br />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+    <footer>Copyright &copy; CSCI 1101</footer>
   </body>
 </html>
