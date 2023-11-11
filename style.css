@@ -43,9 +43,7 @@ a:hover{
 a:active{
   text-decoration: none;
 }
-.content{
-  width: 100%;
-}
+
 footer{
   width: 100%;
   text-align: center;
@@ -56,7 +54,8 @@ footer{
   color:#ff0000;
 }
 .content p{
-  font-size: 20px;
+  font-size: 30px;
+  margin-top: 100px;
 }
 
 .content img {
@@ -73,4 +72,22 @@ footer{
   margin-top: 100px;
   border: rgb(34, 0, 255) 2px ;
   border-radius: 50px;
+}
+
+.portal2Title {
+  padding-left: 500px;
+  color:#ff0000;
+  
+}
+
+.portal2Image {
+  padding-left: 1500px;
+  margin-left: 20px;
+  margin-top: 5px;
+  border: rgb(34, 0, 255) 2px ;
+  border-radius: 50px;
+}
+
+.paragraph {
+  margin-top: 50px;
 }
