@@ -67,27 +67,36 @@ footer{
 }
 
 .images2 {
-  padding-left: 0px;
-  margin-left: 20px;
-  margin-top: 100px;
+  padding-left: 750px;
+  margin-left: 0px;
+  margin-top: 10px;
   border: rgb(34, 0, 255) 2px ;
   border-radius: 50px;
 }
 
+
 .portal2Title {
-  padding-left: 500px;
+  padding-left: 1100px;
   color:#ff0000;
   
 }
 
 .portal2Image {
-  padding-left: 1500px;
-  margin-left: 20px;
-  margin-top: 5px;
+  padding-left: 750px;
+  margin-left: 0px;
+  margin-top: 10px;
   border: rgb(34, 0, 255) 2px ;
   border-radius: 50px;
 }
 
 .paragraph {
   margin-top: 50px;
+}
+.paragraph2 {
+  margin-top: 50px;
+}
+
+.majorastitle {
+  padding-left: 1000px;
+  color:#ff0000;
 }
