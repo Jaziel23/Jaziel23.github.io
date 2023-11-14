@@ -7,8 +7,6 @@ header {
   align-items: center;
   background-color: #000000;
   padding-top: 5px;
-  border-top: 2px solid #fff; 
-  border-bottom: 2px solid #fff; 
 }
 
 .nav-bar {
@@ -158,5 +156,37 @@ body {
   margin: 0;
 }
 
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #000;
+}
+
+.large-text {
+  font-size: 50px;
+}
+
+.small-text {
+  font-size: 30px;
+}
 
 
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro h2 {
+  color: #ff0015;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
