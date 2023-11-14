@@ -2,20 +2,16 @@
   margin:0px;
   padding:0px;
 }
-header{
-  width:100%;
+header {
+  width: 100%;
   align-items: center;
   background-color: #000000;
   padding-top: 5px;
+  border-top: 2px solid #fff; 
+  border-bottom: 2px solid #fff; 
 }
-.heading{
-  color:  #ff0000;
-  font-size:30px;
-}
-.heading h1{
-  text-align: center;
-}
-.nav-bar{
+
+.nav-bar {
   background-color: #202021;
   display: flex;
   justify-content: space-around;
@@ -24,12 +20,20 @@ header{
   padding-top: 5px;
   margin-bottom: 0px;
 }
+.heading{
+  color:  #ff0015;
+  font-size:30px;
+}
+.heading h1{
+  text-align: center;
+}
+
 .nav-bar a{
   font-size: 20px;
-  color:#ff0000;
+  color:#ff0015;
 }
 .nav-bar .active{
-  color: rgb(255, 0, 0);
+  color: #ff0015;
 }
 a:link{
   text-decoration: none;
@@ -51,7 +55,7 @@ footer{
   background-color: #000000;
   bottom:0;
   position: fixed;
-  color:#ff0000;
+  color:#ff0015;
 }
 .content p{
   font-size: 30px;
@@ -76,17 +80,19 @@ footer{
 
 
 .drJekyllTitle {
-  padding-left: 900px;
-  color:#ff0000;
+  padding-left: 0px;
+  color:#ff0015;
+  text-align: center
   
 }
 
 .drjekyllImage {
-  padding-left: 750px;
+  padding-left: 0px;
   margin-left: 0px;
   margin-top: 10px;
   border: rgb(34, 0, 255) 2px ;
   border-radius: 50px;
+  text-align: center
 }
 
 .paragraph {
@@ -97,44 +103,60 @@ footer{
 }
 
 .Friday13Title {
-  padding-left: 1000px;
-  color:#ff0000;
+  padding-left: 0px;
+  text-align: center;
+  color:#ff0015;
 }
 .Friday13Image {
-  padding-left: 750px;
+  padding-left: 0px;
   margin-left: 0px;
   margin-top: 10px;
   border: rgb(34, 0, 255) 2px ;
   border-radius: 50px;
+  text-align: center
 }
 .images2 {
-  padding-left: 750px;
+  padding-left: 0px;
   margin-left: 0px;
   margin-top: 10px;
   border: rgb(34, 0, 255) 2px;
   border-radius: 50px;
+  text-align: center
 }
 
 .portal2Title {
-  padding-left: 1100px;
-  color: #ff0000;
+  padding-left: 0px;
+  color: #ff0015;
+  text-align: center
 }
 .portal2Image {
-  padding-left: 750px;
+  padding-left: 0px;
   margin-left: 0px;
   margin-top: 10px;
   border: rgb(34, 0, 255) 2px;
   border-radius: 50px;
+  text-align: center
 }
 
 .paragraph {
   margin-top: 50px;
+  
 }
 .paragraph2 {
   margin-top: 50px;
 }
 
 .majorastitle {
-  padding-left: 1000px;
-  color: #ff0000;
+  padding-left:0;
+  color: #ff0015;
+  text-align: center
 }
+
+body {
+  background: linear-gradient(to right, #000, #000035);
+  color: #fff;
+  margin: 0;
+}
+
+
+
