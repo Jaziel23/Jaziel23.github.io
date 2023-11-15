@@ -1,11 +1,10 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us | Game Reviews</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-      
       .container {
         max-width: 800px;
         margin: 0 auto;
@@ -42,8 +41,8 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        background-color: #fff; 
-        color: #000; 
+        background-color: #fff;
+        color: #000;
       }
 
       input[type="submit"] {
@@ -79,13 +78,18 @@
       }
 
       .box2::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -100%;
         left: -100%;
         width: 200%;
         height: 200%;
-        background: linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.2), transparent 80%);
+        background: linear-gradient(
+          45deg,
+          transparent 20%,
+          rgba(255, 255, 255, 0.2),
+          transparent 80%
+        );
         transition: transform 0.3s ease;
       }
 
@@ -101,10 +105,8 @@
         text-align: center;
       }
       .box-container {
-  text-align: center;
-}
-
-      
+        text-align: center;
+      }
     </style>
     <script>
       function validate() {
@@ -158,24 +160,23 @@
         <fieldset>
           <legend>Contact Us</legend>
           <label for="uname">Username:</label>
-          <input type="text" name="uname" id="uname" required>
+          <input type="text" name="uname" id="uname" required />
 
           <label for="fname">First Name:</label>
-          <input type="text" name="fname" id="fname" required>
+          <input type="text" name="fname" id="fname" required />
 
           <label for="lname">Last Name:</label>
-          <input type="text" name="lname" id="lname" required>
+          <input type="text" name="lname" id="lname" required />
 
           <label for="passw">Password:</label>
-          <input type="password" name="passw" id="passw" required>
+          <input type="password" name="passw" id="passw" required />
 
           <label for="cpassw">Confirm Password:</label>
-          <input type="password" name="cpassw" id="cpassw" required>
+          <input type="password" name="cpassw" id="cpassw" required />
 
-          <input type="submit" onclick="validate();" value="Submit">
+          <input type="submit" onclick="validate();" value="Submit" />
         </fieldset>
       </form>
-      <p>Feel free to reach out for any questions, feedback, or assistance. We're here to help you!</p>
     </div>
     <footer>
       <p>&copy; CSCI 1101</p>

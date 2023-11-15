@@ -2,45 +2,50 @@
   <head>
     <style>
       .box-container {
-  text-align: center;
-}
+        text-align: center;
+      }
 
-.box {
-  display: inline-block;
-  width: 200px;
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #fff;
-  background-color: #000035;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  position: relative; 
-  overflow: hidden; 
-  transition: transform 0.3s ease; 
-}
+      .box {
+        display: inline-block;
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #fff;
+        background-color: #000035;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
 
-.box::before {
-  content: '';
-  position: absolute;
-  top: -100%;
-  left: -100%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.2), transparent 80%); 
-  transition: transform 0.3s ease;
-}
+      .box::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          45deg,
+          transparent 20%,
+          rgba(255, 255, 255, 0.2),
+          transparent 80%
+        );
+        transition: transform 0.3s ease;
+      }
 
-.box:hover::before {
-  transform: translate(50%, 50%); 
-}
+      .box:hover::before {
+        transform: translate(50%, 50%);
+      }
 
-.box:hover {
-  background-color: #004080; 
-}
+      .box:hover {
+        background-color: #004080;
+      }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -59,8 +64,15 @@
     <div class="content">
       <div class="intro">
         <h2>Welcome to Game Reviews!</h2>
-        <p>Explore the world of gaming with us as we delve into the best and worst games of all time. Our dedicated team of two reviewers carefully assesse each title, providing in-depth analysis and honest critiques.</p>
-        <p> Below you will find the games that we have reviewd thoroughly and our contact information. We hope that you enjoy our reviews.</p>
+        <p>
+          Explore the world of gaming with us as we delve into the best and
+          worst games of all time. Our dedicated team of reviewers carefully
+          assesse each title, providing in-depth analysis and honest critiques.
+        </p>
+        <p>
+          Below you will find the games that we have reviewd thoroughly and our
+          contact information. We hope that you enjoy our reviews.
+        </p>
       </div>
       <div class="box-container">
         <a href="goodgames.html" class="box">Best Games</a>
