@@ -1,12 +1,116 @@
-<html>
+<html lang="en">
   <head>
-    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Game Reviews</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      form {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #000035;
+      }
+
+      fieldset {
+        border: none;
+      }
+
+      legend {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #fff;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #fff; 
+        color: #000; 
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .content p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 20px;
+        color: #fff;
+      }
+
+      .box2 {
+        display: inline-block;
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #fff;
+        background-color: #000035;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .box2::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.2), transparent 80%);
+        transition: transform 0.3s ease;
+      }
+
+      .box2:hover::before {
+        transform: translate(50%, 50%);
+      }
+
+      .box2:hover {
+        background-color: #004080;
+      }
+
+      .box-container {
+        text-align: center;
+      }
+      .box-container {
+  text-align: center;
+}
+
+      
+    </style>
     <script>
       function validate() {
         var username = document.signup.uname.value;
-        var firstanme = document.signup.fname.value;
-        var lastname = document.signup.lnamea.value;
+        var firstname = document.signup.fname.value;
+        var lastname = document.signup.lname.value;
         var password = document.signup.passw.value;
         var cpassword = document.signup.cpassw.value;
 
@@ -17,15 +121,15 @@
           password == "" ||
           cpassword == ""
         ) {
-          alert("Fill in all the fields");
+          alert("Please fill in all the fields.");
         } else {
           if (password.length < 8 || password.length > 15) {
-            alert("Password should be between 8-15 characters long");
+            alert("Password should be between 8-15 characters long.");
           } else {
             if (password != cpassword) {
-              alert("Password and Confirm password should match");
+              alert("Password and Confirm Password should match.");
             } else {
-              alert("Form submitted success");
+              alert("Form submitted successfully. Thank you!");
             }
           }
         }
@@ -41,47 +145,40 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="goodgames.html">Best Games</a></li>
         <li><a href="badgames.html">Worst Games</a></li>
-        <li><a href="contactUs.html">Contact Us</a></li>
+        <li><a class="active" href="contactUs.html">Contact Us</a></li>
       </ul>
     </header>
-    <div class="content">
+    <div class="box-container">
+      <a href="goodgames.html" class="box2">Best Games</a>
+      <a href="badgames.html" class="box2">Worst Games</a>
+      <a href="contactUs.html" class="box2">Contact Information</a>
+    </div>
+    <div class="container">
       <form name="signup">
         <fieldset>
-          <legend>Sign Up</legend>
-          <table>
-            <tr>
-              <td align="right"><label>Username:</label></td>
-              <td><input type="text" name="uname" /><br /></td>
-            </tr>
-            <tr>
-              <td align="right"><label>First Name:</label></td>
-              <td><input type="text" name="fname" /><br /></td>
-            </tr>
-            <tr>
-              <td align="right"><label>Last Name:</label></td>
-              <td><input type="text" name="lname" /><br /></td>
-            </tr>
-            <tr>
-              <td align="right"><label>Password:</label></td>
-              <td><input type="password" name="passw" /><br /></td>
-            </tr>
-            <tr>
-              <td align="right"><label>Confirm Password:</label></td>
-              <td><input type="password" name="cpassw" /><br /></td>
-            </tr>
-            <tr>
-              <td colspan="2" align="center">
-                <input
-                  type="submit"
-                  onclick="validate();"
-                  value="Sign up"
-                /><br />
-              </td>
-            </tr>
-          </table>
+          <legend>Contact Us</legend>
+          <label for="uname">Username:</label>
+          <input type="text" name="uname" id="uname" required>
+
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" required>
+
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" required>
+
+          <label for="passw">Password:</label>
+          <input type="password" name="passw" id="passw" required>
+
+          <label for="cpassw">Confirm Password:</label>
+          <input type="password" name="cpassw" id="cpassw" required>
+
+          <input type="submit" onclick="validate();" value="Submit">
         </fieldset>
       </form>
+      <p>Feel free to reach out for any questions, feedback, or assistance. We're here to help you!</p>
     </div>
-    <footer>Copyright &copy; CSCI 1101</footer>
+    <footer>
+      <p>&copy; CSCI 1101</p>
+    </footer>
   </body>
 </html>

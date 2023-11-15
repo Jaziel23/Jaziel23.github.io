@@ -16,12 +16,54 @@
       }
 
       .box {
-        width: 70%; 
+        width: 70%;
         margin: 20px auto;
         padding: 20px;
         border: 1px solid #fff;
         background-color: #000035;
       }
+
+      .box2 {
+        display: inline-block;
+        width: 200px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #fff;
+        background-color: #000035;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .box2::before {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent 20%, rgba(255, 255, 255, 0.2), transparent 80%);
+        transition: transform 0.3s ease;
+      }
+
+      .box2:hover::before {
+        transform: translate(50%, 50%);
+      }
+
+      .box2:hover {
+        background-color: #004080;
+      }
+
+      .box-container {
+        text-align: center;
+      }
+      .box-container {
+  text-align: center;
+}
+
     </style>
     <title>Best Games</title>
     <link rel="stylesheet" href="style.css" />
@@ -38,8 +80,12 @@
         <li><a href="contactus.html">Contact Us</a></li>
       </ul>
     </header>
+    <div class="box-container">
+      <a href="goodgames.html" class="box2">Best Games</a>
+      <a href="badgames.html" class="box2">Worst Games</a>
+      <a href="contactUs.html" class="box2">Contact Information</a>
+    </div>
 
-    
     <div class="box">
       <div class="portal2Title">
         <p><b class="large-text">Portal 2 Review</b></p>
@@ -63,17 +109,10 @@
       </div>
     </div>
 
-    
     <div class="portal2Image">
-      <img
-        src="images/portal2game.jpg"
-        width="1000"
-        height="1000"
-        alt="Portal 2"
-      />
+      <img src="images/portal2game.jpg" width="1000" height="1000" alt="Portal 2" />
     </div>
 
-    
     <div class="box">
       <div class="majorastitle">
         <p><b class="large-text">Majora's Mask Review</b></p>
@@ -101,14 +140,8 @@
       </div>
     </div>
 
-    
     <div class="images2">
-      <img
-        src="images/majorasmaskgame.jpg"
-        width="1000"
-        height="1000"
-        alt="Majora's Mask"
-      />
+      <img src="images/majorasmaskgame.jpg" width="1000" height="1000" alt="Majora's Mask" />
     </div>
 
     <footer>Copyright &copy; CSCI 1101</footer>
